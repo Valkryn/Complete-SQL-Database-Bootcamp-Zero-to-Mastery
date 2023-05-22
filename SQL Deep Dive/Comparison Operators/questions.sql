@@ -4,7 +4,7 @@ SELECT COUNT(*) FROM customers
     gender = 'F';
 
 -- Who over the age of 44 has an income of 100 000 or more? (excluding 44)
-SELECT age,income FROM customers
+SELECT firstname, age,income FROM customers
     WHERE age > 44 AND
     income >= 100000;
 
