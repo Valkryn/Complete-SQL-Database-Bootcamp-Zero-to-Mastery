@@ -9,13 +9,10 @@ SELECT firstname, age,income FROM customers
     income >= 100000;
 
 -- Who between the ages of 30 and 50 has an income less than 50 000?
--- (include 30 and 50 in the results)
-
-/*
-* Write your query here
-*/
+-- (include 30 and 50 in the results
+SELECT firstname,lastname,age,income FROM customers
+    WHERE age>30 AND age < 50 AND income < 50000;
 
 -- What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
-/*
-* Write your query here
-*/
+SELECT round( AVG(income),2) FROM customers
+    WHERE AGE >30 AND AGE < 50;
