@@ -1,7 +1,7 @@
 -- How many female customers do we have from the state of Oregon (OR)?
-/*
-* Write your query here
-*/
+SELECT COUNT(*) FROM customers
+    WHERE state = 'OR' AND 
+    gender = 'F';
 
 -- Who over the age of 44 has an income of 100 000 or more? (excluding 44)
 /*
