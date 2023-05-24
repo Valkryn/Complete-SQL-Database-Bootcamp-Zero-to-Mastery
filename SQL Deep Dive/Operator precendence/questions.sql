@@ -8,6 +8,13 @@
 * that are from either Japan or Australia
 */
 
+SELECT * FROM customers
+    WHERE (
+            (age >=50 or age < 20) AND 
+                (country = 'Japan' OR country = 'Australia')
+            )
+        AND income > 50000
+
 /*
 * DB: Store
 * Table: Orders
