@@ -21,3 +21,7 @@ SELECT * FROM customers
 * Question: 
 * What was our total sales in June of 2004 for orders over 100 dollars?
 */
+
+SELECT SUM(totalamount) FROM orders
+    where orderdate >='2004-06-01' and orderdate < '2004-07-01'
+        AND totalamount > 100
