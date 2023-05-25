@@ -13,3 +13,4 @@ SELECT AVG(COALESCE(AGE,15)) from "Student";
 * Question: 
 * Replace all empty first or last names with a default?
 */
+SELECT id,  COALESCE(name,'first name') AS "First Name", coalesce (lastname,'last name') AS "Last Name" from "Student";
