@@ -23,4 +23,4 @@ WHERE address2 IS NOT null;
 */
 
 SELECT coalesce(lastName, 'Empty'), * from customers
-where (age IS NULL);
+where age IS null;
