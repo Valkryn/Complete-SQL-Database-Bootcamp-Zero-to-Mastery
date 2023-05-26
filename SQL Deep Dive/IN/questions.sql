@@ -4,7 +4,8 @@
 * Question: How many orders were made by customer 7888, 1082, 12808, 9623
 */
 
-SELECT * FROM orders;
+select count( orderid) from orders
+        WHERE customerid IN (7888,1082,12808,9623);
 
 
 /*
