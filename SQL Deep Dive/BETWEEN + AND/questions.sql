@@ -6,6 +6,5 @@ SELECT age, firstname, lastname, income FROM CUSTOMERS
         and income < 50000;
 
 -- What is the average income between the ages of 20 and 50? (Including 20 and 50)
-/*
-* Write your query here
-*/
+SELECT round( AVG(age)) from customers
+    WHERE age BETWEEN 20 AND 50;
