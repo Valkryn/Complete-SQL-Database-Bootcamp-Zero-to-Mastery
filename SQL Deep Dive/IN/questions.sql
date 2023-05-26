@@ -14,4 +14,5 @@ select count( orderid) from orders
 * Question: How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
 */
 
-SELECT * FROM city;
+SElect count("name") from city
+    WHERE district IN ('Zuid-Holland','Noord-Brabant','Utrechte');
