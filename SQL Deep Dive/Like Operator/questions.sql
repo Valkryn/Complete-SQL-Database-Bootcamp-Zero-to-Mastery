@@ -44,6 +44,6 @@ SELECT count(*) FROM customers
 * Replace null values with "No State"                                                  
 * Expected output: https://imgur.com/AVe6G4c
 */
-select COALESCE(state,'No State') from customers
+select COALESCE(state,'No State') AS "State" from customers
     where phone::text ILIKE '302%';
 
