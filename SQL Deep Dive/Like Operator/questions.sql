@@ -24,7 +24,8 @@ SELECT COUNT(*) FROM employees
 * Question: How many people's zipcode have a 2 in it?.
 * Expected output: 4211 
 */
-
+SELECT COUNT(*) FROM customers
+    where zip::TEXT ILIKE '%2%';
 
 
 /*
