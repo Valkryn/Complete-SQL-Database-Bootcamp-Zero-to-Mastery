@@ -16,7 +16,8 @@ select *, EXTRACT (YEAR FROM AGE(birth_date)) from employees
 * Expected output: 1846
 */
 
-                                                  
+SELECT COUNT(*) FROM employees
+    WHERE first_name ILIKE 'A%R'                                           
 /*
 * DB: Store
 * Table: customers
