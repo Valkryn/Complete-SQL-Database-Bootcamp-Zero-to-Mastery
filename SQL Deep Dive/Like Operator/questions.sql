@@ -34,7 +34,8 @@ SELECT COUNT(*) FROM customers
 * Question: How many people's zipcode start with 2 with the 3rd character being a 1.
 * Expected output: 109 
 */
-
+SELECT count(*) FROM customers
+    where zip::text ILIKE '2_1%'
 
 /*
 * DB: Store
