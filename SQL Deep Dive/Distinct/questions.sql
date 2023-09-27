@@ -22,5 +22,6 @@ select count( DISTINCT(birth_date)) from public.employees;
 * Make sure there are no nulls
 */
 
-SELECT * FROM country;
+select DISTINCT(lifeexpectancy) from public.country
+    WHERE lifeexpectancy is not null;
 
