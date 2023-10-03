@@ -4,7 +4,9 @@
 *  Database: Employees
 */
 
-CREATE VIEW "90-95" AS
+CREATE  OR REPLACE VIEW "90-95" AS select * from employees
+    where EXTRACT(year from hire_date) BETWEEN '1990' AND '1995'
+    ORDER BY hire_date;
 -- ...
 
 /*
@@ -13,5 +15,10 @@ CREATE VIEW "90-95" AS
 *  Database: Employees
 */
 
-CREATE VIEW "bigbucks" AS
+create or replace view "Big Bucks" as SELECT e.emp_no , e.first_name , max(s.salary) FROM employees as e
+    inner join salaries as s using(emp_no)
+    where s.salary > 80000
+    group by e.emp_no , e.first_name
+    order by e.emp_no ;
+    
 -- ...
